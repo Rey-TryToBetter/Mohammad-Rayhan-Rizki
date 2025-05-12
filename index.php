@@ -34,8 +34,7 @@
   </section>
   <!-- End Header -->
 
-
-  <!-- Hero Section  -->
+  <!-- Hero Section -->
   <section id="hero">
     <div class="hero container">
       <div>
@@ -46,7 +45,7 @@
       </div>
     </div>
   </section>
-  <!-- End Hero Section  -->
+  <!-- End Hero Section -->
 
   <!-- Projects Section -->
   <section id="projects">
@@ -75,29 +74,12 @@
             <img src="./img/project-2.jpg" alt="img">
           </div>
         </div>
+      </div>
     </div>
   </section>
   <!-- End Projects Section -->
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/rey.jpg" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">Tentang <span>Aku</span></h1>
-        <h2>Front End Developer</h2>
-        <p>Mohammad Rayhan Rizki adalah seorang front-end developer pemula yang penuh semangat untuk mengembangkan keterampilan dan menciptakan pengalaman pengguna yang luar biasa. Meskipun masih dalam tahap awal perjalanan pengembangannya, Rayhan menunjukkan dedikasi yang tinggi untuk belajar dan berkembang di dunia pengembangan web. Dengan dasar HTML, CSS, dan JavaScript, ia bertekad untuk membuat website yang menarik, responsif, dan mudah digunakan. Setiap baris kode yang ia tulis adalah langkah menuju profesionalisme di industri teknologi.</p>
-        <!-- <a href="#" class="cta">Download Resume</a> -->
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
-
-  <!-- Contact Section -->
+  <!-- Contact Info Section -->
   <section id="contact">
     <div class="contact container">
       <div>
@@ -105,21 +87,21 @@
       </div>
       <div class="contact-items">
         <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png " /></div>
           <div class="contact-info">
             <h1>Phone</h1>
             <h2>+62 8786 3118 174</h2>
           </div>
         </div>
         <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png " /></div>
           <div class="contact-info">
             <h1>Email</h1>
             <h2>mohammadrayhanrizki@gmail.com</h2>
           </div>
         </div>
         <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png " /></div>
           <div class="contact-info">
             <h1>Alamat</h1>
             <h2>Surabaya, Jawa Timur, Indonesia</h2>
@@ -128,7 +110,29 @@
       </div>
     </div>
   </section>
-  <!-- End Contact Section -->
+  <!-- End Contact Info Section -->
+
+  <!-- Contact Form Section -->
+  <section id="contact-form">
+    <div class="contact-form container">
+      <div>
+        <h1 class="section-title">Kirim <span>Pesan</span></h1>
+      </div>
+      <form action="">
+        <div class="form-item">
+          <input type="text" placeholder="Nama" required>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="form-item">
+          <input type="text" placeholder="Subjek" required>
+          <input type="text" placeholder="Nomor Telepon" required>
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Pesan"></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+  <!-- End Contact Form Section -->
 
   <!-- Footer -->
   <section id="footer">
@@ -139,17 +143,21 @@
       <h2>Terimakasih telah berkunjung</h2>
       <div class="social-icon">
         <div class="social-item">
-          <a href="https://github.com/Rey-TryToBetter" target="_blank"><img src="https://img.icons8.com/?size=256&id=12599&format=png" /></a>
+          <a href="https://github.com/Rey-TryToBetter " target="_blank">
+            <img src="https://img.icons8.com/?size=256&id=12599&format=png " />
+          </a>
         </div>
         <div class="social-item">
-          <a href="https://www.instagram.com/reyzr12?igsh=MXc1aHVuaTE1aXc2cQ==" target="_blank"><img src="https://img.icons8.com/?size=256&id=Xy10Jcu1L2Su&format=png" /></a>
-        </div>
+          <a href="https://www.instagram.com/reyzr12?igsh=MXc1aHVuaTE1aXc2cQ== " target="_blank">
+            <img src="https://img.icons8.com/?size=256&id=Xy10Jcu1L2Su&format=png " />
+          </a>
         </div>
       </div>
       <p>Copyright © Moh Rayhan Rizki. All rights reserved</p>
     </div>
   </section>
   <!-- End Footer -->
+
   <script src="./app.js"></script>
 </body>
 
