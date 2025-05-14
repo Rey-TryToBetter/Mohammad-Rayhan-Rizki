@@ -1,3 +1,11 @@
+<?php 
+require_once 'connect.php';
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +17,6 @@
 </head>
 
 <body>
-  <!-- Header -->
   <section id="header">
     <div class="header container">
       <div class="nav-bar">
@@ -32,9 +39,7 @@
       </div>
     </div>
   </section>
-  <!-- End Header -->
 
-  <!-- Hero Section -->
   <section id="hero">
     <div class="hero container">
       <div>
@@ -45,9 +50,7 @@
       </div>
     </div>
   </section>
-  <!-- End Hero Section -->
 
-  <!-- Projects Section -->
   <section id="projects">
     <div class="projects container">
       <div class="projects-header">
@@ -58,7 +61,11 @@
           <div class="project-info">
             <h1>Project 1</h1>
             <h2>Course Website</h2>
-            <p>Saya membuat sebuah website kursus coding yang dirancang khusus untuk memudahkan pengguna dalam belajar pemrograman. Menggunakan HTML dan CSS sebagai dasar, website ini menawarkan tampilan yang bersih dan responsif, memudahkan akses dan navigasi. Dengan fokus pada pengalaman pengguna yang sederhana namun efektif, saya berusaha menghadirkan platform yang membantu para pembelajar untuk berkembang dalam dunia coding dengan cara yang menyenangkan dan informatif.</p>
+            <p>Saya membuat sebuah website kursus coding yang dirancang khusus untuk memudahkan pengguna dalam belajar
+              pemrograman. Menggunakan HTML dan CSS sebagai dasar, website ini menawarkan tampilan yang bersih dan
+              responsif, memudahkan akses dan navigasi. Dengan fokus pada pengalaman pengguna yang sederhana namun
+              efektif, saya berusaha menghadirkan platform yang membantu para pembelajar untuk berkembang dalam dunia
+              coding dengan cara yang menyenangkan dan informatif.</p>
           </div>
           <div class="project-img">
             <img src="./img/project-1.jpg" alt="img">
@@ -68,7 +75,12 @@
           <div class="project-info">
             <h1>Project 2</h1>
             <h2>Course Website 2</h2>
-            <p>Saya membuat sebuah website kursus coding yang dirancang untuk memberikan pengalaman belajar yang menyenangkan dan efektif. Dengan memanfaatkan HTML, CSS, dan framework Tailwind CSS, website ini menawarkan desain yang responsif dan modern. Tailwind memungkinkan saya untuk dengan mudah membuat layout yang fleksibel dan tampilan yang menarik tanpa menulis banyak kode kustom. Platform ini bertujuan untuk memberikan kemudahan akses dan navigasi bagi pengguna yang ingin belajar coding dengan cara yang lebih praktis.</p>
+            <p>Saya membuat sebuah website kursus coding yang dirancang untuk memberikan pengalaman belajar yang
+              menyenangkan dan efektif. Dengan memanfaatkan HTML, CSS, dan framework Tailwind CSS, website ini
+              menawarkan desain yang responsif dan modern. Tailwind memungkinkan saya untuk dengan mudah membuat layout
+              yang fleksibel dan tampilan yang menarik tanpa menulis banyak kode kustom. Platform ini bertujuan untuk
+              memberikan kemudahan akses dan navigasi bagi pengguna yang ingin belajar coding dengan cara yang lebih
+              praktis.</p>
           </div>
           <div class="project-img">
             <img src="./img/project-2.jpg" alt="img">
@@ -77,9 +89,7 @@
       </div>
     </div>
   </section>
-  <!-- End Projects Section -->
 
-  <!-- Contact Info Section -->
   <section id="contact">
     <div class="contact container">
       <div>
@@ -110,31 +120,27 @@
       </div>
     </div>
   </section>
-  <!-- End Contact Info Section -->
 
-  <!-- Contact Form Section -->
   <section id="contact-form">
     <div class="contact-form container">
       <div>
         <h1 class="section-title">Kirim <span>Pesan</span></h1>
       </div>
-      <form action="">
-        <div class="form-item">
-          <input type="text" placeholder="Nama" required>
-          <input type="email" placeholder="Email" required>
-        </div>
-        <div class="form-item">
-          <input type="text" placeholder="Subjek" required>
-          <input type="text" placeholder="Nomor Telepon" required>
-        </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Pesan"></textarea>
-        <button type="submit">Kirim Pesan</button>
-      </form>
+<form action="process_contact.php" method="POST">
+  <div class="form-item">
+    <input type="text" name="name" placeholder="Nama" required>
+    <input type="email" name="email" placeholder="Email" required>
+  </div>
+  <div class="form-item">
+    <input type="text" name="subject" placeholder="Subjek" required>
+    <input type="text" name="phone" placeholder="Nomor Telepon" required>
+  </div>
+  <textarea name="message" cols="30" rows="10" placeholder="Pesan" required></textarea>
+  <button type="submit">Kirim Pesan</button>
+</form>
     </div>
   </section>
-  <!-- End Contact Form Section -->
 
-  <!-- Footer -->
   <section id="footer">
     <div class="footer container">
       <div class="brand">
@@ -156,7 +162,6 @@
       <p>Copyright © Moh Rayhan Rizki. All rights reserved</p>
     </div>
   </section>
-  <!-- End Footer -->
 
   <script src="./app.js"></script>
 </body>

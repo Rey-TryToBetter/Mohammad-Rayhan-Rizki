@@ -1,23 +1,15 @@
 <?php
-// Database configuration
-$host = "localhost";     // Database host
-$username = "root";      // Database username
-$password = "";          // Database password
-$database = "mydatabase"; // Your database name
+$host = "localhost";
+$user = "rey";
+$pass = "rey";
+$db = "db_porto";
 
-// Create connection
-try {
-  $conn = mysqli_connect($host, $username, $password, $database);
-  
-  // Check connection
-  if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-  }
-  echo "Connected successfully!";
-  
-} catch (Exception $e) {
-  echo "Connection failed: " . $e->getMessage();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+$conn = mysqli_connect($host, $user, $pass, $db);
+
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error() . " (" . mysqli_connect_errno() . ")");
 }
-
-// You can comment out or remove the success message later
 ?>
