@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "rey";
-$pass = "rey";
-$db = "db_porto";
+$user = "root";
+$pass = "";
+$db = "porto_contact";
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
